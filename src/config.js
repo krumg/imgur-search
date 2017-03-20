@@ -1,0 +1,1 @@
+export const IMGUR_CLIENT_ID = '2534515518e4afa';
