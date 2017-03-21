@@ -7,3 +7,15 @@ export function formatDate(timestamp) {
 
     return month + ' ' + day + ", " + year;
   }
+    
+export function spinner() {
+    return `<div class="uil-spin-css" style="-webkit-transform:scale(0.25)"><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>`
+}
+
+export function $(id) {
+    return document.getElementById(id);
+}
+
+export function more() {
+    return `<button type="button" class="btn btn-primary">More...</button>`;
+}

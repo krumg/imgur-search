@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Imgur API Search app",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline"
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack --env=prod --progress --profile --colors"
   },
   "main": "index.js",
   "author": "Krum Gjorgiev <krum.gjorgiev@gmail.com>",

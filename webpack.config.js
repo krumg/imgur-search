@@ -5,17 +5,20 @@ var BUILD_DIR = path.resolve(__dirname, 'dist');
 var APP_DIR = path.resolve(__dirname, 'src');
 
 var config = {
-  /*devtool: 'cheap-module-eval-source-map',*/
+  devtool: 'cheap-module-eval-source-map',
   entry: [
       APP_DIR + '/index.js'
   ],  
   output: {
     path: BUILD_DIR,
-    publicPath: '/static/',
+    publicPath: '/dist/',
     filename: 'bundle.js'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+      
+    new webpack.optimize.UglifyJsPlugin({})
+  
   ],
   module : {
     loaders : [{
