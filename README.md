@@ -9,6 +9,10 @@ I am keeping things simple and clean — using [axios](https://github.com/mzabri
 
 Finally, webpack bundles everything together into a single file.
 
+### Demo
+
+Demo available at [Codepen](http://codepen.io/krum/full/BWrKbg/)
+
 ### Usage
 
 ```
